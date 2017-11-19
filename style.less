@@ -9,9 +9,7 @@
  *  Logo images
  */
 .logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
+    display: none;
 }
 
 .site-logo-text-icon {
@@ -46,6 +44,7 @@
     height: 80px;
 }
 
+
 // Site title
 .site-logo-text {
     font-size: 2em;
@@ -54,9 +53,11 @@
         text-decoration: none;
     }
 }
+
 /* Responsiv */
 img {
-   max-width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 @media screen and (max-width: 900px) {
@@ -73,6 +74,9 @@ img {
    }
 }
 
+.rm-max.rm-navbar {
+    display: none;
+}
 
 @media screen and (max-width: 750px) {
    .sidebar {
@@ -85,6 +89,12 @@ img {
 @media screen and (max-width: 700px) {
    .footer-column {
        width: 100%;
+   }
+   .navbar2 {
+       display: none;
+   }
+   .rm-max.rm-navbar {
+       display: inline;
    }
 }
 
