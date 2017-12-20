@@ -1,0 +1,99 @@
+
+@import url(light.less);
+
+
+@background: #373737;
+@font-color: white;
+@second-color: #f0f1f4;
+@third-color:  #75A0EA;
+@fourth-color: #FF7800;
+@font: 'Questrial', sans-serif;
+@font2: 'Garamond', serif;
+
+body {
+    background-color: @font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @font-color;
+    font-family: @font;
+    border-bottom: none;
+}
+
+h1 {
+    border-bottom: 2px solid @background;
+}
+
+p {
+    color: @font-color;
+    font-family: @font2;
+}
+
+a{
+    color: @font-color;
+}
+
+.navbar2 {
+    border-bottom: 3px solid @background;
+    background-color: @background;
+    width: 100%;
+}
+
+.rm-desktop li a {
+    font-family: @font;
+    font-size: 18px;
+    color: @fourth-color;
+    background-color: @background;
+    font-weight: 600;
+}
+
+.rm-desktop li a:hover {
+    background-color: @background;
+    color: @third-color;
+}
+
+.logo-1 {
+    position: absolute;
+    left: 20px;
+    top: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.main {
+    .column(10);
+    .push(1);
+    border-top: 3px solid @third-color;
+    background-color: @background;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.main.has-sidebar-left.has-sidebar{
+    .column(9);
+    border-top: 3px solid @third-color;
+    background-color: @background;
+}
+
+.sidebar-left {
+    border-top: 3px solid @third-color;
+    background-color: @background;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.site-footer {
+    .column(12);
+    border-top: 1px solid @background;
+    background-color: @fourth-color;
+
+}
+
+
+.outer-wrap-footer {
+    border-top: 1px solid @background;
+    background-color: @background;
+}

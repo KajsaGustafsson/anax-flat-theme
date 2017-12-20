@@ -1,0 +1,94 @@
+
+@import url(dark.less);
+
+@base: white;
+@font-color: #373737;
+@first-color: #6882EB;
+@second-color: #FF8100;
+@third-color: #00D13F;
+
+@font: 'Montserrat', sans-serif;
+
+body {
+    background-color: @font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid @font-color;
+    text-transform: uppercase;
+    font-family: @font;
+}
+
+h1 {
+    padding: 5px;
+}
+
+h4 {
+    padding: 5px;
+    color: @third-color;
+}
+
+a{
+    color: @font-color;
+}
+
+.navbar2 {
+    border-bottom: 3px solid @first-color;
+    width: 100%;
+    background-color: @font-color;
+}
+
+.rm-desktop li a {
+    font-family: @font;
+    font-size: 18px;
+    color: @second-color;
+    text-transform: uppercase;
+    background-color: @font-color;
+}
+
+.rm-desktop li a:hover {
+    background-color: @font-color;
+    color: @second-color;
+}
+
+.logo-1 {
+    position: absolute;
+    left: 20px;
+    top: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.main {
+    background-color: @base;
+    border-top: 2px solid @font-color;
+}
+
+.main.has-sidebar-left.has-sidebar{
+    background-color: @base;
+    border-top: 2px solid @font-color;
+}
+
+.sidebar-left {
+    border-right: 2px solid @third-color;
+    background-color: @base;
+
+
+}
+
+.byline {
+    background: @third-color!important;
+}
+
+.site-footer {
+    border-top: 1px solid @third-color;
+    background-color: @first-color;
+
+}
+
+
+.outer-wrap-footer {
+    background-color: @base;
+    border-top: 1px solid @third-color;
+
+}
