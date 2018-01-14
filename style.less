@@ -1,134 +1,122 @@
-/**
-* Anax Flat theme.
-*/
+
 @import url(modules.less);
-@import url(layout.less);
-@import url(navbar.less);
-@import url(typo/typography.less);
 
 
-/** --------------------------------------------------------------
- *  Logo images
- */
-.logo-1 {
-    display: none;
-}
+@import url(base.less);
 
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
-}
+@text-color: black;
+@font: 'Raleway', sans-serif;
+@font2: 'Garamond', serif;
 
-.rm-max .rm-small .rm-button {
-    font-size: 2em;
-}
-
-@maxButtonFontSize: 2em;
-
-// Style navbar
-.rm-desktop li {
-    background-color: #096;
-}
-
-
-
-// Size each item in the header
-/*.site-logo-text,
-.navbar2,
-.profile {
-    float: left;
-    width: 30%;
-}*/
-
-.site-header {
-    height: 80px;
-}
-
-
-// Site title
-.site-logo-text {
-    font-size: 2em;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-/* Responsiv */
-img {
+html {
     margin: 0 auto;
-    max-width: 90%;
 }
 
-@media screen and (max-width: 900px) {
-   .site-logo-text {
-       width: 40%;
-   }
 
-   .navbar2 {
-       width: 50%;
-   }
-
-   .profile {
-       width: 10%;
-   }
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: @font;
 }
 
-.rm-max.rm-navbar {
+p {
+    text-align: center;
+    font-family: @font2;
+
+}
+
+a {
+    color: black;
+}
+
+
+.text {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: @font;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+.flash-img {
+    .column(12);
+    width: 100%;
+    height: auto;
+    display: block;
+    float:none;
+}
+
+.space {
+    margin-top: 200px;
+}
+
+.container-start {
+    .column(10);
+    .push(1);
+    margin: 0 auto;
+    position: absolute;
+    top: 560px;
+}
+
+.div-start {
+    float: left;
+    width: 25%;
+    height: 200px;
+    margin: 3.8%;
+    text-align: center;
+}
+
+.wrapper {
+    color: @text-color;
+    padding: 10px;
+    text-align: left;
+   -webkit-transform: skew(0deg, 5deg);
+   transform: skew(0deg, 5deg);
+   float:left;
+   & h2{
+       text-align: left;
+       margin-top: 50px;
+   }
+
+   & p {
+       max-width: 500px;
+       float: left;
+       text-align: left;
+       font-size: 18px;
+   }
+
+   & .figure {
+       float: right;
+       margin-top: -80px;
+       border:1px solid black;
+   }
+  }
+
+
+.after-main {
+    background-color: #87817580;
+    -webkit-transform: skew(0deg,-5deg);
+    transform: skew(0deg,-5deg);
+    padding: 70px 0;
+    margin: 100px 0px 200px;
+    margin-left: 0px;
+    width: 100%;
+
+        & a {
+            color: #a59e8f;
+        }
+}
+
+
+.inner-wrap-footer {
+    background-color: #333333;
+    color: #a59e8f;
+        & a {
+            color: #a59e8f;
+        }
+}
+
+.meta-header {
     display: none;
-}
-
-@media screen and (max-width: 750px) {
-   .sidebar {
-       //width: 100%;
-       display: none;
-   }
-}
-
-
-@media screen and (max-width: 700px) {
-   .footer-column {
-       width: 100%;
-   }
-   .navbar2 {
-       display: none;
-   }
-   .rm-max.rm-navbar {
-       display: inline;
-   }
-
-   .inner-wrap ul {
-       list-style-type: none;
-   }
-
-   img {
-       max-width: 90%;
-   }
-
-   .site-logo-text a {
-       .column (9);
-
-   }
-   .main {
-       .column(10);
-       .push(1);
-   }
-   .main.has-sidebar-left.has-sidebar{
-       .column(10);
-       .push(1);
-   }
-
-
-}
-
-
-@media screen and (max-width: 560px) {
-    .site-logo-text {
-        width: 90%;
-    }
-
-    .navbar2 {
-        display: none;
-    }
 }
